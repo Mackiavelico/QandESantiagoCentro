@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:alpha="1"
+    android:background="@drawable/portada"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="247dp"
+        android:layout_height="247dp"
+        android:layout_marginTop="60dp"
+        app:srcCompat="@drawable/member"
+        tools:layout_editor_absoluteX="82dp"
+        tools:layout_editor_absoluteY="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <LinearLayout
+        android:layout_width="360dp"
+        android:layout_height="400dp"
+        android:layout_marginBottom="12dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <EditText
+            android:layout_margin="10dp"
+            android:id="@+id/editTextTextEmailAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alpha="0.8"
+            android:background="#EDBB99"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="textEmailAddress"
+            android:hint="Correo"
+            android:textColor="@color/purple_500"
+            android:textSize="40dp"
+            android:minHeight="50dp"
+            android:textColorHint="@color/black"
+            android:textStyle="bold" />
+
+
+        <EditText
+            android:layout_margin="10dp"
+
+            android:id="@+id/editTextNumberPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="numberPassword"
+            android:hint="Contraseña"
+            android:minHeight="50dp"
+            android:gravity="center"
+            android:textSize="40dp"
+            android:textStyle="bold"
+            android:textColorHint="@color/black"
+            android:background="#D35400"
+            android:alpha="0.7"
+            android:textColor="@color/purple_500" />
+
+        <Button
+            android:onClick="onClickAcceder"
+            android:layout_margin="50dp"
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="50dp"
+            android:gravity="center"
+            android:alpha="0.7"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:background="#F7DC6F"
+            android:text="Continuar" />
+
+
+    </LinearLayout>
+
+
+
+
+
+</android.support.constraint.ConstraintLayout>

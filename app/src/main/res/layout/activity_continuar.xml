@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:alpha="1"
+    android:background="@drawable/portada"
+    tools:context=".MainActivity">
+
+
+    <ImageButton
+        android:onClick="onClickVinos"
+        android:id="@+id/imageButton2"
+        android:layout_width="128dp"
+        android:layout_height="132dp"
+        android:alpha="0.8"
+        android:background="#B2BABB"
+        app:srcCompat="@drawable/vinos"
+        tools:layout_editor_absoluteX="57dp"
+        tools:layout_editor_absoluteY="186dp" />
+
+    <ImageButton
+        android:onClick="onClickCervezas"
+        android:id="@+id/imageButton3"
+        android:layout_width="122dp"
+        android:layout_height="133dp"
+        android:alpha="0.8"
+        android:background="#B2BABB"
+        app:srcCompat="@drawable/cerveza"
+        tools:layout_editor_absoluteX="244dp"
+        tools:layout_editor_absoluteY="186dp" />
+
+    <ImageButton
+        android:onClick="onClickLicores"
+        android:id="@+id/imageButton4"
+        android:layout_width="123dp"
+        android:layout_height="129dp"
+        android:alpha="0.8"
+        android:background="#B2BABB"
+        app:srcCompat="@drawable/licores"
+        tools:layout_editor_absoluteX="62dp"
+        tools:layout_editor_absoluteY="350dp" />
+
+    <ImageButton
+        android:onClick="onClickTragos"
+        android:id="@+id/imageButton5"
+        android:layout_width="120dp"
+        android:layout_height="122dp"
+        android:alpha="0.8"
+        android:background="#B2BABB"
+        app:srcCompat="@drawable/tragos"
+        tools:layout_editor_absoluteX="243dp"
+        tools:layout_editor_absoluteY="350dp" />
+
+
+</android.support.constraint.ConstraintLayout>
